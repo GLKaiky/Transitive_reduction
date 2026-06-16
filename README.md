@@ -18,13 +18,13 @@ O projeto avalia aspectos críticos de:
 ---
 
 ## 👥 Integrantes do Grupo
-* [Kaiky França dos Reis Silva](https://kaikyfrs.com.br) — *Responsabilidade principal: Gerenciamento, Arquitetura da estrutura do grafo e Algoritmo de redução.*
-* [Integrante 2](https://github.com/seu-usuario) — *Responsabilidade principal: Automação dos testes de benchmark e coleta de dados.*
-* [Integrante 3](https://github.com/seu-usuario) — *Responsabilidade principal: Implementação do módulo gerador de grafos de teste.*
-* [Integrante 4](https://linkedin.com/in/seu-perfil) — *Responsabilidade principal: Escrita e modelagem do relatório acadêmico em LaTeX.*
-* [Integrante 5](https://github.com/seu-usuario) — *Responsabilidade principal: Validação de casos de teste, corretude e caça a bugs.*
-* [Integrante 6](https://linkedin.com/in/seu-perfil) — *Responsabilidade principal: Análise teórica (complexidade assintótica e caso não-direcionado).*
-* [Integrante 7](https://github.com/seu-usuario) — *Responsabilidade principal: Tratamento de dados brutos e geração dos gráficos de performance.*
+* [Kaiky França dos Reis Silva](https://kaikyfrs.com.br) 
+* [Integrante 2](https://github.com/seu-usuario) 
+* [Integrante 3](https://github.com/seu-usuario) 
+* [Integrante 4](https://linkedin.com/in/seu-perfil) 
+* [Integrante 5](https://github.com/seu-usuario) 
+* [Integrante 6](https://linkedin.com/in/seu-perfil) 
+* [Integrante 7](https://github.com/seu-usuario) 
 
 ---
 
