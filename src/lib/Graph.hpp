@@ -18,13 +18,17 @@
             unsigned int number_of_vertex;
             std::vector<std::list<int> > adjList; //Graph structure
 
-            void DFS(unsigned int startVertex); // Depth First Search
- 
+            void DFS(unsigned int startVertex, std::vector<bool>& visited); // Depth First Search
+
             void BFS(); //Breadth First Search
 
         public:
             //Constructor
             Graph(unsigned int number_of_vertex);
+
+            Graph clone();
+
+            ~Graph();
 
             //Add and Remove methods
             void addEdge(unsigned int origin, unsigned int destination);
@@ -35,7 +39,6 @@
 
             void printGraph();
             
-
     };
 
 #endif
