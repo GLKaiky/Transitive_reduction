@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2026 Kaiky França dos Reis Silva
  */
 
-#include "Graph.hpp"
+#include "Graph_adjList.hpp"
 #include <iostream>
 #include <stack>
 #include <vector>
@@ -15,7 +15,7 @@
 /***
  * @brief A modified DFS, with bool vector "visited" is referenced in parameters
  */
-void Graph::DFS(unsigned int startVertex, std::vector<bool>& visited ) {
+void Graph_adjList::DFS(unsigned int startVertex, std::vector<bool>& visited ) {
     std::stack<int> dfsStack; //start the stack
     
     dfsStack.push(startVertex);
@@ -37,35 +37,31 @@ void Graph::DFS(unsigned int startVertex, std::vector<bool>& visited ) {
     }
 }
 
-
-
-Graph::Graph(unsigned int number_of_vertex) {
+Graph_adjList::Graph_adjList(unsigned int number_of_vertex) {
     this->number_of_vertex = number_of_vertex;
-    this->adjList.resize(number_of_vertex);
+    this->adjList.resize(number_of_vertex);    
 }
 
-Graph Graph::clone() {
-    Graph copiedGraph(this->number_of_vertex);
-
+Graph_adjList Graph_adjList::clone() {
+    Graph_adjList copiedGraph(this->number_of_vertex);
     copiedGraph.adjList = this->adjList;
-
     return copiedGraph;
 }
 
-Graph::~Graph(){ }
+Graph_adjList::~Graph_adjList(){ }
 
 //Directec Edge
-void Graph::addEdge(unsigned int origin, unsigned int destination) {
+void Graph_adjList::addEdge(unsigned int origin, unsigned int destination) {
     this->adjList[origin].push_back(destination); //Point the origin vertex, to destination vertex A -> B -> C...
 }
 
-void Graph::removeEdge(unsigned int origin, unsigned int destination) {
+void Graph_adjList::removeEdge(unsigned int origin, unsigned int destination) {
     this->adjList[origin].remove(destination); //Remove the edges between vertices
 }
 
-void Graph::execute_transitive_reduction() {
+void Graph_adjList::execute_transitive_reduction() {
     unsigned int i = 0;
-    Graph snapshot = this->clone();
+    Graph_adjList snapshot = this->clone();
 
     for(i; i < snapshot.number_of_vertex; i++) {
 
@@ -83,7 +79,7 @@ void Graph::execute_transitive_reduction() {
     }
 }
 
-void Graph::printGraph() {
+void Graph_adjList::printGraph() {
     int i = 0;
 
     for(i; i< this->number_of_vertex; i++) {

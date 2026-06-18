@@ -1,8 +1,8 @@
-#include "./lib/Graph.hpp"
+#include "./lib/Graph_adjList.hpp"
 #include <iostream>
 
 int main() {
-    Graph g(3);
+    Graph_adjList g(3);
 
     g.addEdge(0, 1);
     g.addEdge(1, 2);

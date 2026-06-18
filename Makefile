@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -std=c++17 -g
 TARGET = programa
 
 # 2. Arquivos do Projeto
-SRCS = ./src/main.cpp ./src/lib/Grafo.cpp
+SRCS = ./src/main.cpp ./src/lib/Graph_adjList.cpp ./src/lib/Graph_adjMatrix.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # 3. Regra Principal (O que roda quando você digita apenas 'make')
