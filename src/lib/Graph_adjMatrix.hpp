@@ -13,18 +13,18 @@
 
 class Graph_adjMatrix {
     private:
-        unsigned int number_of_vertrex;
+        unsigned int number_of_vertices;
         bool ** adjMatrix;
     
     public:
 
-        Graph_adjMatrix(unsigned int number_of_vertex);
+        Graph_adjMatrix(unsigned int number_of_vertices);
 
         void addEdge(unsigned int origin, unsigned int destination);
         
         void removeEdge(unsigned int origin, unsigned int destination);
 
-        void warshall();
+        void floyd_warshall();
         
         ~Graph_adjMatrix();
         
