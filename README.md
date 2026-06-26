@@ -21,7 +21,7 @@ O projeto avalia aspectos críticos de:
 * [Kaiky França dos Reis Silva](https://kaikyfrs.com.br) 
 * [Luís Fernando Rodrigues Braga](https://github.com/Trinalsolid) 
 * [Davi Cândido de Almeida](https://github.com/DaviKandido) 
-* [Integrante 4](https://linkedin.com/in/seu-perfil) 
+* [Victor Monteiro Martinelli Grataroli](https://github.com/Lonely-Warlock) 
 * [Integrante 5](https://github.com/seu-usuario) 
 * [Integrante 6](https://linkedin.com/in/seu-perfil) 
 * [Integrante 7](https://github.com/seu-usuario) 
