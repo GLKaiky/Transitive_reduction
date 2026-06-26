@@ -3,21 +3,28 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++17 -g
 TARGET = programa
 
-# 2. Arquivos do Projeto
-SRCS = ./src/main.cpp ./src/lib/Graph_adjList.cpp ./src/lib/Graph_adjMatrix.cpp
-OBJS = $(SRCS:.cpp=.o)
+# Variáveis de Diretório (Novidade aqui)
+SRC_DIR = ./src
+OBJ_DIR = ./obj
 
-# 3. Regra Principal (O que roda quando você digita apenas 'make')
+# 2. Arquivos do Projeto
+SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/lib/Graph_adjList.cpp $(SRC_DIR)/lib/Graph_adjMatrix.cpp
+
+# Mágica de substituição: troca o caminho do src/ pelo obj/ e a extensão .cpp por .o
+OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
+
+# 3. Regra Principal
 all: $(TARGET)
 
-# 4. Regra de Linkagem (Junta os .o para criar o executável final)
+# 4. Regra de Linkagem
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
-# 5. Regra de Compilação (Transforma .cpp em arquivos objeto .o)
-%.o: %.cpp
+# 5. Regra de Compilação
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(dir $@) 
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# 6. Regra de Limpeza (Apaga os arquivos gerados)
+# 6. Regra de Limpeza
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -rf $(OBJ_DIR) $(TARGET)

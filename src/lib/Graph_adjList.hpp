@@ -1,9 +1,9 @@
 /**
- * @file      Graph.hpp
+ * @file      Graph_adjList.hpp
  * @author    Kaiky França dos Reis Silva
  * @brief     Defines the "Grafo" header
- * @version   0.1
- * @date      2026-06-15
+ * @version   0.2
+ * @date      2026-06-26
  * @copyright Copyright (c) 2026 Kaiky França dos Reis Silva
  */
 
@@ -12,34 +12,37 @@
 
 #include <vector>
 #include <list>
+#include <stack>
+#include <utility> 
 
-    class Graph_adjList {
-        private:
-            unsigned int number_of_vertex;
-            std::vector<std::list<int> > adjList; //Graph structure
-            int ** adjMatrix;
+class Graph_adjList {
+    private:
+        unsigned int number_of_vertex;
+        std::vector<std::list<int>> adjList; 
+        void DFS(unsigned int startVertex, std::vector<bool>& visited); 
+        
+        void tarjanDFS(unsigned int u, unsigned int& timer, std::vector<int>& ids, 
+                       std::vector<int>& low, std::vector<bool>& on_stack, 
+                       std::stack<int>& s, std::vector<int>& scc_ids, int& scc_counter);
+                       
+        std::pair<std::vector<int>, int> findSCCs();
 
-            void DFS(unsigned int startVertex, std::vector<bool>& visited); // Depth First Search
- 
-            void BFS(); //Breadth First Search
+    public:
+        // Constructor
+        Graph_adjList(unsigned int number_of_vertex);
+        
+        Graph_adjList clone();
 
-        public:
-            //Constructor
-            Graph_adjList(unsigned int number_of_vertex);
-            
-            Graph_adjList clone();
+        ~Graph_adjList();
 
-            ~Graph_adjList();
+        // Add and Remove methods
+        void addEdge(unsigned int origin, unsigned int destination);
+        void removeEdge(unsigned int origin, unsigned int destination);
 
-            //Add and Remove methods
-            void addEdge(unsigned int origin, unsigned int destination);
-            void removeEdge(unsigned int origin, unsigned int destination);
+        // Transitive reduction method
+        void execute_transitive_reduction();
 
-            //Transitive reduction method. The goal is to remove the reduntant edges
-            void execute_transitive_reduction();
-
-            void printGraph();
-            
-    };
+        void printGraph();
+};
 
 #endif
