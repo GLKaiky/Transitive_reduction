@@ -19,7 +19,7 @@ O projeto avalia aspectos críticos de:
 
 ## 👥 Integrantes do Grupo
 * [Kaiky França dos Reis Silva](https://kaikyfrs.com.br) 
-* [Integrante 2](https://github.com/seu-usuario) 
+* [Luís Fernando Rodrigues Braga](https://github.com/Trinalsolid)) 
 * [Integrante 3](https://github.com/seu-usuario) 
 * [Integrante 4](https://linkedin.com/in/seu-perfil) 
 * [Integrante 5](https://github.com/seu-usuario) 
