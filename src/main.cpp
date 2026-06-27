@@ -1,3 +1,13 @@
+/**
+ * @file      main.cpp
+ * @author    Kaiky França dos Reis Silva
+ * @brief     
+ * @version   0.1
+ * @date      2026-06-27
+ * @copyright Copyright (c) 2026 Kaiky França dos Reis Silva
+ */
+
+
 #include "./lib/Graph_adjList.hpp"
 #include "./lib/Graph_adjMatrix.hpp"
 #include "./generator/gerador_de_grafo.hpp"

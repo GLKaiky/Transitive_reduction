@@ -1,3 +1,13 @@
+/**
+ * @file      gerador_de_grafo.cpp
+ * @author    Kaiky França dos Reis Silva
+ * @brief     
+ * @version   0.1
+ * @date      2026-06-27
+ * @copyright Copyright (c) 2026 Kaiky França dos Reis Silva
+ */
+
+
 #include "gerador_de_grafo.hpp"
 #include <fstream>
 #include <iostream>
