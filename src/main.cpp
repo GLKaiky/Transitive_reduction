@@ -1,44 +1,53 @@
 #include "./lib/Graph_adjList.hpp"
 #include "./lib/Graph_adjMatrix.hpp"
+#include "./generator/gerador_de_grafo.hpp"
 #include <iostream>
 
-int main() {
-    Graph_adjList gU(3);
+int main(int argc, char ** argv) {
 
-    
-    // Cria um grafo com 4 vértices
-    Graph_adjMatrix g(3);
+    if(argc < 2) {
+        std::cerr << "Uso: " << argv[0] << " <arquivo.txt>\n";
+        return 1;
+    }
 
-    // Adiciona o caminho principal e o ciclo
-    g.addEdge(0, 1);
-    g.addEdge(1, 2);
-    g.addEdge(2, 1);
-    g.addEdge(1, 0); 
-
-    gU.addEdge(0, 1);
-    gU.addEdge(1, 2);
-    gU.addEdge(2, 1);
-    gU.addEdge(1, 0); 
-    // Adiciona a aresta REDUNDANTE (0 direto para 2)
-
-    std::cout << "Matriz ORIGINAL:\n";
-    g.print();
-
-    std::cout << "Matriz ORIGINAL ADJ:\n";
-    gU.printGraph();
-
-    // Roda a mágica
-    g.transitiveReduction();
-
-    gU.execute_transitive_reduction();
-
-    std::cout << "Matriz REDUZIDA (Transitive Reduction):\n";
-    g.print();
-
-    std::cout << "Matriz REDUZIDA ADJ:\n";
-    gU.printGraph();
+    Graph_adjList* OriginalProposal = nullptr;
 
 
+    Graph_adjMatrix * AhoProposal = nullptr;
 
-    return 0;
+    if(!gerar_Grafos(argv[1], AhoProposal, OriginalProposal)) {
+        std::cerr << "Não foi possivel carregar o arquivo, ou ele ainda não está preenchido, está localizado na pasta inputs " << argv[1] << "\n";
+        return 1;
+    }
+
+
+    std::cout << "\n\n";
+
+    std::cout << "Lista de Adjacência:\n";
+        OriginalProposal->printGraph();
+
+        std::cout << "\n\n";
+
+        std::cout << "Matriz ORIGINAL:\n";
+        AhoProposal->print();
+
+
+        std::cout << "\n\n";
+
+        OriginalProposal->execute_transitive_reduction();
+        AhoProposal->transitiveReduction();
+
+        std::cout << "Lista de Adjacência REDUZIDA (Transitive Reduction):\n";
+        OriginalProposal->printGraph();
+
+
+        std::cout << "\n\n";
+
+        std::cout << "Matriz REDUZIDA:\n";
+        AhoProposal->print();
+
+        delete OriginalProposal;
+        delete AhoProposal;
+
+        return 0;
 }

@@ -40,8 +40,6 @@ class Graph_adjMatrix {
         
         ~Graph_adjMatrix();
         
-        void printGraph();
-
         Graph_adjMatrix create_DAG();
 
         void transitiveReduction();
