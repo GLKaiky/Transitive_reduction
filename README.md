@@ -111,14 +111,23 @@ O programa utiliza a biblioteca `<fstream>` para carregar os grafos dinamicament
 * A primeira linha deve conter um inteiro indicando a quantidade de vértices $V$.
 * As linhas subsequentes devem conter pares de inteiros representando as arestas direcionadas (Origem $\rightarrow$ Destino).
 
-**Exemplo:**
+**Exemplos:**
 
 ```text
 3
 0 1
 1 2
 2 0
+```
 
+```text
+5
+0 1
+0 2
+0 3
+0 4
+1 0
+1 2
 ```
 
 ---
