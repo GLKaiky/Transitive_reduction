@@ -22,6 +22,7 @@ set(SOURCES
     src/lib/Graph_adjList.cpp 
     src/lib/Graph_adjMatrix.cpp
     src/generator/gerador_de_grafo.cpp
+    src/benchmark/runner.cpp
 )
 
 # Cria o executável

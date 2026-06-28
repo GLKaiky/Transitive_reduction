@@ -8,7 +8,7 @@ SRC_DIR = ./src
 OBJ_DIR = ./obj
 
 # 2. Arquivos do Projeto
-SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/lib/Graph_adjList.cpp $(SRC_DIR)/lib/Graph_adjMatrix.cpp $(SRC_DIR)/generator/gerador_de_grafo.cpp
+SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/lib/Graph_adjList.cpp $(SRC_DIR)/lib/Graph_adjMatrix.cpp $(SRC_DIR)/generator/gerador_de_grafo.cpp ${SRC_DIR}/benchmark/runner.cpp
 
 # Mágica de substituição: troca o caminho do src/ pelo obj/ e a extensão .cpp por .o
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))

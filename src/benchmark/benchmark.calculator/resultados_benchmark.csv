@@ -1,0 +1,15 @@
+arquivo,vertices,arestas,tipo_densidade,algoritmo,tempo_us
+inputs/esparso_100.txt,100,250,Esparso,Matriz,322
+inputs/esparso_250.txt,250,600,Esparso,Matriz,3644
+inputs/esparso_500.txt,500,1200,Esparso,Matriz,14310
+inputs/esparso_1000.txt,1000,2500,Esparso,Matriz,60147
+inputs/denso_100.txt,100,8000,Denso,Matriz,1306
+inputs/denso_250.txt,250,55000,Denso,Matriz,8376
+inputs/denso_500.txt,500,220000,Denso,Matriz,33423
+inputs/esparso_100.txt,100,250,Esparso,Lista,242
+inputs/esparso_250.txt,250,600,Esparso,Lista,1162
+inputs/esparso_500.txt,500,1200,Esparso,Lista,2211
+inputs/esparso_1000.txt,1000,2500,Esparso,Lista,5232
+inputs/denso_100.txt,100,8000,Denso,Lista,1153
+inputs/denso_250.txt,250,55000,Denso,Lista,10921
+inputs/denso_500.txt,500,220000,Denso,Lista,92391
