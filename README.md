@@ -29,7 +29,7 @@ O projeto avalia aspectos críticos de:
 * [Luís Fernando Rodrigues Braga](https://github.com/Trinalsolid) 
 * [Davi Cândido de Almeida](https://github.com/DaviKandido) 
 * [Victor Monteiro Martinelli Grataroli](https://github.com/Lonely-Warlock) 
-* [Integrante 5](https://github.com/seu-usuario) 
+* [Samuel Horta de Faria](https://github.com/SamuelHortadeFaria) 
 * [Integrante 6](https://linkedin.com/in/seu-perfil) 
 * [Integrante 7](https://github.com/seu-usuario) 
 
