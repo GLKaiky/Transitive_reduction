@@ -26,7 +26,7 @@
  */
 int main(int argc, char ** argv) {
 
-   /* //Checks if the user provided the input file path as a command-line argument
+    //Checks if the user provided the input file path as a command-line argument
     if(argc < 2) {
         std::cerr << "Uso: " << argv[0] << " <arquivo.txt>\n";
         return 1;
@@ -74,9 +74,9 @@ int main(int argc, char ** argv) {
         delete OriginalProposal;
         delete AhoProposal;
 
-        return 0;*/
+        return 0;
 
-    std::ofstream csvFile("resultados_benchmark.csv");
+   /* std::ofstream csvFile("resultados_benchmark.csv");
     
     if (!csvFile.is_open()) {
         std::cerr << "Erro fatal: Nao foi possivel criar o arquivo CSV!\n";
@@ -123,5 +123,5 @@ int main(int argc, char ** argv) {
     std::cout << "\n==========================================\n";
     std::cout << " Resultados gravados em 'resultados_benchmark.csv'\n";
     
-    return 0;
+    return 0;*/
 }
