@@ -25,13 +25,13 @@ O projeto avalia aspectos críticos de:
 ---
 
 ## 👥 Integrantes do Grupo
+* [Davi Cândido de Almeida](https://github.com/DaviKandido) 
 * [Kaiky França dos Reis Silva](https://kaikyfrs.com.br) 
 * [Luís Fernando Rodrigues Braga](https://github.com/Trinalsolid) 
-* [Davi Cândido de Almeida](https://github.com/DaviKandido) 
+* [Integrante 4](https://linkedin.com/in/seu-perfil) 
+* [Suzane Lemos de Lima](https://github.com/SuzaneLemos) 
 * [Victor Monteiro Martinelli Grataroli](https://github.com/Lonely-Warlock) 
 * [Samuel Horta de Faria](https://github.com/SamuelHortadeFaria) 
-* [Integrante 6](https://linkedin.com/in/seu-perfil) 
-* [Integrante 7](https://github.com/seu-usuario) 
 
 ---
 
